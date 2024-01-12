@@ -80,7 +80,7 @@ dfs(ref_x,ref_y,1)
 llc_x,llc_y=ref_x-(w//2),ref_y-(h//2)
 res={}
 for i in visited:
-	res[i]=(i[0]*w,i[1]*h)
+	res[i]=(i[0]*w+llc_x,(i[1]*h)+llc_y)
 f = open("E:\\git repos\\kla_hackathon_2024\\Milestone2\\output1.txt", "a")
 for i in res:
 	f.write(str(i)+":"+str(res[i]))
